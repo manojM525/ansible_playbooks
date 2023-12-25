@@ -1,0 +1,21 @@
+#practicing indentation with a list of names
+- name: manoj reddy
+  DOB: "jan 1994"
+  ADDRESS:
+  - hno: 19-907/2
+    street: nagarjuna nagar
+    city: miryalaguda
+  email: manojmulukuri@gmail.com    
+
+- name: naipunya reddy
+  DOB: "jan 1996"
+  ADDRESS:
+  - type: temporary
+    hno: 8
+    street: near sports complex
+    city: davangere
+  - type: permanent
+    hno: 19-907/2
+    street: reddy colony
+    city: miryalaguda
+- email: naipunyamanoj@gmail.com    
