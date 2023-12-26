@@ -4,8 +4,8 @@
   vars: person
   tasks: 
   - name: ping the server to test the connection
-    ansible.bulitin.debug:
-      msg: "print {{ person }}"
+    ansible.bulitin.ping:
+    
   - name: install nginx on the node server
     ansible.builtin.package:
       name: nginx
