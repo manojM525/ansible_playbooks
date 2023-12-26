@@ -1,0 +1,13 @@
+- name: declaring variables at play level and task level
+  hosts: localhost
+  vars:
+    tournament: "IPL"
+    teams: "SUNRISERS"
+  become: yes
+  tasks: 
+  - name: print variables
+    vars: 
+      teams: "CSK"
+    ansible.builtin.debug:
+      msg: "the {{teams}} with most titles in {{tournament}}"
+      

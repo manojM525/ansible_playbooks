@@ -1,5 +1,6 @@
-- name: trying variables at multiple places
-  hosts: localhost
+#declaring the varialble at playbook level
+- name: variable at playbook level
+  hosts: localhost #it will automatically execute inthe ansible server, no need to mention it in the inventory
   become: yes
   vars: 
     person: "manoj"
@@ -8,4 +9,4 @@
   - name: to  the play variables
     ansible.builtin.debug:
       msg: "hello {{person}} , a very {{wishes}}"
-      
+
