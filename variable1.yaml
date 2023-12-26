@@ -1,0 +1,11 @@
+- name: trying variables at multiple places
+  hosts: localhost
+  become: yes
+  vars: 
+    person: "manoj"
+    wishes: "good morning"
+  tasks:
+  - name: to  the play variables
+    ansible.builtin.debug:
+      msg: "hello {{person}} , a very {{wishes}}"
+      
