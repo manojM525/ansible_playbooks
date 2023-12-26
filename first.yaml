@@ -3,7 +3,7 @@
   become: yes #indicates root user or not
   tasks: 
   - name: ping the server to test the connection
-    ansible.bulitin.ping:
+    ansible.builtin.ping:
     
   - name: install nginx on the node server
     ansible.builtin.package:
