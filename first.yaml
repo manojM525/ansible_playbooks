@@ -1,6 +1,6 @@
 - name: writing down the general syntax of a ansible playbook
   hosts: web #targeted servers
-  welcome: yes #indicates root user or not
+  become: yes #indicates root user or not
   tasks: 
   - name: ping the server to test the connection
     ansible.bulitin.ping:
