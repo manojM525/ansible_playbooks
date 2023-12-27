@@ -1,0 +1,9 @@
+- name: declaring variables in a file
+  hosts: localhost
+  vars_files:
+    variables.yaml
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: " {{tournament}} is played by {{teams}} "
+      

@@ -10,4 +10,7 @@
       teams: "CSK"
     ansible.builtin.debug:
       msg: "the {{teams}} with most titles in {{tournament}}"
-      
+
+  #in ansible task level variables take precedence over play level variables
+  # this is known as inheritance
+  #inheritance principle is followed in java, python, .net programming languages too    
