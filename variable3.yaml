@@ -7,3 +7,4 @@
     ansible.builtin.debug:
       msg: " {{tournament}} is played by {{teams}} "
 
+#make sure the file under vars_files have the same spelling as the one inthe repository
