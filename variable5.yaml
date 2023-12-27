@@ -1,0 +1,6 @@
+- name: declare variables in inventory
+  hosts: localhost
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: " the top batsman is {{player}} and top bowler is {{bowler}}"
