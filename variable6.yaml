@@ -1,0 +1,6 @@
+- name: declare variables in commandline
+  hosts: localhost
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: " the top batter is {{batter}} and top allrounder is {{allrounder}}"
