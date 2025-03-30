@@ -1,0 +1,11 @@
+- name: practicing ansible again
+  hosts: gaming
+  become: yes
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
+
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present

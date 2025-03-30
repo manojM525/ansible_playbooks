@@ -1,3 +1,4 @@
+
 - name: declare variables in commandline
   hosts: localhost
   tasks:
